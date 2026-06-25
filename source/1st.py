@@ -6,4 +6,4 @@ from langchain_anthropic import ChatAnthropic
 load_dotenv()
 llm=ChatOpenAI(model="gpt-4o-mini")
 response=llm.invoke("how is today's weather")
-print(response)
+print(response)#ok
