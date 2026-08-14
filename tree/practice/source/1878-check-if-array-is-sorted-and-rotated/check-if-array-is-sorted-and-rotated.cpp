@@ -13,15 +13,15 @@ public:
         }
 
         // Try every occurrence of minimum
-        for(int pos = 0; pos < n; pos++) {
+        for(int k = 0; k < n; k++) {
 
-            if(nums[pos] != max)
+            if(nums[k] != max)
                 continue;
 
             vector<int> temp = nums;
 
-            // Rotate left pos times
-            for(int i = 0; i < pos; i++) {
+            // Rotate left k times
+            for(int i = 0; i < k; i++) {
                 int x = temp[0];
 
                 for(int j = 0; j < n - 1; j++) {
